@@ -84,10 +84,9 @@ public class CityList {
      *      Position of item
      */
     public int getPosition(City city) {
-        List<City> list = cities;
         int position = 1;
         for (City c : cities) {
-            if (c == city){
+            if (c.getCityName().equals(city.getCityName()) && c.getProvinceName().equals(city.getProvinceName())){
                 break;
             }
             else{
