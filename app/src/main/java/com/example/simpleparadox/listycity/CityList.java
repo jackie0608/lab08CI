@@ -77,4 +77,23 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+    
+        /**
+     * Return the position of a city in list
+     * @return
+     *      Position of item
+     */
+    public int getPosition(City city) {
+        List<City> list = cities;
+        int position = 1;
+        for (City c : cities) {
+            if (c == city){
+                break;
+            }
+            else{
+                position += 1;
+            }
+        }
+        return position;
+    }
 }
